@@ -4,12 +4,14 @@
   "sideEffects": false,
   "version": "0.0.0",
   "scripts": {
-    "build": "shopify hydrogen build",
-    "dev": "shopify hydrogen dev",
+    "build": "npm run plasmic-sync && shopify hydrogen build",
+    "dev": "npm run plasmic-sync && shopify hydrogen dev",
     "preview": "npm run build && shopify hydrogen preview",
     "lint": "eslint --no-error-on-unmatched-pattern --ext .js,.ts,.jsx,.tsx .",
     "typecheck": "tsc --noEmit",
-    "plasmic": "plasmic sync -p"
+    "plasmic-sync": "[ ! -f plasmic.json ] && cp plasmic-empty.json plasmic.json; plasmic sync -p 9LhnBWx7GdPG233uB4TumX --yes",
+    "plasmic-clean": "rm -rf plasmic.json plasmic.lock app/_plasmic"
+
   },
   "prettier": "@shopify/prettier-config",
   "dependencies": {
