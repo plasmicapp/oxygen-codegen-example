@@ -10,9 +10,13 @@ import {
 import type {Shop} from '@shopify/hydrogen/storefront-api-types';
 import styles from './styles/app.css';
 import favicon from '../public/favicon.svg';
+import { cssBundleHref } from '@remix-run/css-bundle';
 
 export const links: LinksFunction = () => {
   return [
+    ...(
+      cssBundleHref ? [{rel: "stylesheet", href: cssBundleHref}] : []
+    ),
     {rel: 'stylesheet', href: styles},
     {
       rel: 'preconnect',
@@ -45,8 +49,6 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <h1>Hello, {name}</h1>
-        <p>This is a custom storefront powered by Hydrogen</p>
         <Outlet />
         <ScrollRestoration />
         <Scripts />
