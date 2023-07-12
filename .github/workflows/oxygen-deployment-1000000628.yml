@@ -2,7 +2,13 @@
 #! oxygen_storefront_id: 1000000628
 
 name: Storefront 1000000628
-on: [push]
+on: 
+  push:
+    branches: [ main ]
+  repository_dispatch:
+    types:
+      - plasmic
+
 
 permissions:
   contents: read
