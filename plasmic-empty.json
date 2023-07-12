@@ -18,7 +18,19 @@
   },
   "srcDir": "./app/_plasmic",
   "defaultPlasmicDir": "./plasmic",
-  "projects": [],
+  "projects": [{
+    "projectId": "9LhnBWx7GdPG233uB4TumX",
+    "version": "latest",
+    "projectApiToken": "WHxlZqlM0G0ZnPxbKBzA2b1kDaBBelqLJlOAmSUq92SmQbbRIbHNBjirBCmep2TmD9JtT7lYCOCOp0mQ",
+    "components": [],
+    "icons": [],
+    "images": [],
+    "codeComponents": [],
+    "cssFilePath": "",
+    "indirect": false,
+    "globalContextsFilePath": "",
+    "projectName": ""
+  }],
   "globalVariants": {
     "variantGroups": []
   },
