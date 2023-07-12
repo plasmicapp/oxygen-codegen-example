@@ -20,7 +20,7 @@
   "defaultPlasmicDir": "./plasmic",
   "projects": [{
     "projectId": "9LhnBWx7GdPG233uB4TumX",
-    "version": "latest",
+    "version": ">0.0.0",
     "projectApiToken": "WHxlZqlM0G0ZnPxbKBzA2b1kDaBBelqLJlOAmSUq92SmQbbRIbHNBjirBCmep2TmD9JtT7lYCOCOp0mQ",
     "components": [],
     "icons": [],
