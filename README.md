@@ -1,3 +1,9 @@
+# New location
+
+This is now moved to:
+
+https://github.com/plasmicapp/plasmic/tree/master/examples/hydrogen-oxygen-with-model-renderer
+
 # Plasmic + Hydrogen (Remix) with build-time codegen
 
 This demonstrates using Plasmic with Hydrogen / Remix with build-time codegen.
